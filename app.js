@@ -10,7 +10,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 require('./routes/user.route')(app);
 
-var db_url = 'mongodb+srv://Abhishek:Abhishek@cluster0-qeeih.mongodb.net/user?retryWrites=true&w=majority';
+var db_url = 'mongodb+srv://*******:*******@cluster0-qeeih.mongodb.net/user?retryWrites=true&w=majority';
 mongoose.connect(db_url, { useNewUrlParser: true,useUnifiedTopology: true },()=>{
     console.log('connected to database');
 });
